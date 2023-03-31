@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	input[type="search"]::-webkit-search-decoration,
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]::-webkit-search-results-button,
+	input[type="search"]::-webkit-search-results-decoration {
+		display: none;
+	}
+
+	:is(li, button):focus {
+		outline-color: #22c55e;
+		outline-width: 2px;
+	}
+
+	@font-face {
+		font-family: "Montserrat-web";
+		src: local("Montserrat"), url("/fonts/montserrat/Montserrat-Regular.otf") format("opentype");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Montserrat-web";
+		src: local("Montserrat"), url("/fonts/montserrat/Montserrat-Medium.otf") format("opentype");
+		font-weight: 500;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Montserrat-web";
+		src: local("Montserrat"),
+			url("/fonts/montserrat/Montserrat-SemiBold.otf") format("opentype");
+		font-weight: 600;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Montserrat-web";
+		src: local("Montserrat"), url("/fonts/montserrat/Montserrat-Bold.otf") format("opentype");
+		font-weight: bold;
+		font-style: normal;
+	}
+}
